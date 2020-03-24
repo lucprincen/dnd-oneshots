@@ -1,0 +1,129 @@
+
+body{
+    background: darkslategrey;
+    font-family: sans-serif;
+    line-height: 150%;
+}
+
+.container{
+    max-width: 700px;
+    width: 90%;
+    margin: 50px auto;
+    background: white;
+    padding: 30px 20px;
+}
+
+
+h1, h2{
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+
+h2{
+    padding: 30px 0 0 0;
+}
+
+.list{
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.list li{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.list li strong{
+    flex: 1 0 100%;
+}
+
+.list li{
+    padding: 15px;
+}
+
+.list li:nth-child(even){
+    background: rgba(0,0,0,.1);
+}
+
+.list li p{
+    margin: 5px 0 0 0;
+}
+
+
+.list li span{
+    margin-left: auto;
+    font-size: .7rem;
+    padding: 1px 6px;
+    background: indigo;
+    border: 1px solid rgba(0,0,0,.3);
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+.list li span.full{
+    background: crimson;
+}
+
+.checkbox-dates{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.field{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+}
+
+.field input, .field textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.field select{
+    font-size: 1rem;
+}
+
+.field textarea{
+    min-height: 100px;
+}
+
+.button{
+    background: crimson;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    margin: 10px 0 15px auto;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover, .button:focus{
+    background: #444;
+}
+
+.button-wrapper{
+    display: flex;
+}
+
+.checkbox-dates label{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.checkbox-dates input{
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-dates label:nth-child( even ){
+    background: rgba(0,0,0,.1);
+}
+
